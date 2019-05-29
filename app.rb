@@ -17,7 +17,12 @@ get '/jayda/tan' do
   "Tan"
 end
 
-get '/dog' do
+get '/random-dog' do
+  @name = ["Charlie", "Lucky", "Fluffy"].sample
+  erb(:index)
+end
 
+get '/named-dog' do
+  @name = params[:name]
   erb(:index)
 end
