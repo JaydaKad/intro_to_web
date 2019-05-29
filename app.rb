@@ -11,6 +11,13 @@ end
 
 get '/jayda' do
   "Jayda"
+
+end
+
+get '/say/*/to/*' do
+p params
+params[:splat][0] + ' ' + params[:splat][1] + '!'
+# => 'hello snoopy!'
 end
 
 get '/jayda/tan' do
