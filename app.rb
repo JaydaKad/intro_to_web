@@ -18,7 +18,6 @@ get '/jayda/tan' do
 end
 
 get '/dog' do
-  "<div>
-    <img  style='border: 3px dashed purple' src='https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg'>
-    </div>"
+
+  erb(:index)
 end
