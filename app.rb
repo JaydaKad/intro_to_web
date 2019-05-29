@@ -30,6 +30,7 @@ get '/random-dog' do
 end
 
 get '/named-dog' do
+  p params
   @name = params[:name]
   erb(:index)
 end
